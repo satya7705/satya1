@@ -1,0 +1,18 @@
+git ls-tree origin/main -- satya1
+
+# local version
+ls -la satya1
+To take the remote version:
+
+bash
+Copy code
+# remove local conflicting item, then checkout remote
+rm -rf satya1
+git checkout origin/main -- satya1
+git add satya1
+git rebase --continue   # or if merging, git commit
+To keep the local version (and remove remote version in the merge/rebase):
+
+bash
+Copy code
+
