@@ -1,0 +1,7 @@
+This keeps main clean and reduces conflicts.
+
+✅ Coordinate with teammates
+If multiple people push to the same branch, always pull --rebase before pushing.
+
+✅ Avoid reinitializing (git init) inside an existing Git project
+Use git clone instead.
